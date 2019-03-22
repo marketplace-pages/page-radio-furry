@@ -1,0 +1,29 @@
+title: ""
+description: ""
+lang: "ru_RU"
+logo: "https://cdn-storage.github.io/images/logos/furry.01.001.512.svg.bg.png"
+image: "https://cdn-storage.github.io/images/logos/furry.01.001.512.svg.bg.png"
+
+sass:
+  style: compressed
+  sass_dir: assets/css/
+
+twitter:
+  username: ""
+  card: ""
+
+social:
+  name: ""
+  links:
+  - https://twitter.com/furryfdn
+  - https://vk.com/furryfdn
+
+author:
+  name: "FURRY Foundation"
+  email: "kitsune.solar@gmail.com"
+  github: "KitsuneSolar"
+  twitter: "KitsuneSolar"
+
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
