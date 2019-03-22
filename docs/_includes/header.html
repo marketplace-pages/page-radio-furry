@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="has-background-light has-navbar-fixed-top" dir="ltr" lang="ru">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	{% seo %}
+
+	<!-- custom: seo -->
+	<meta name="keywords" content="{{ site.data.config.meta.keywords }}" />
+	<meta name="copyright" content="{{ site.data.config.meta.copyright }}" />
+	<meta name="theme-color" content="{{ site.data.config.meta.theme-color }}" />
+	<meta property="og:image" content="{{ site.image }}" />
+	<meta name="twitter:image" content="{{ site.image }}" />
+	<!-- / custom: seo -->
+
+	<!-- styles -->
+	{% for font in site.data.config.fonts %}
+		<link rel="stylesheet" href="{{ font }}" />
+	{% endfor %}
+
+	{% for style in site.data.config.styles %}
+		<link rel="stylesheet" href="{{ style }}" />
+	{% endfor %}
+
+	<link rel="stylesheet" href="{{ "/assets/css/theme.css" | relative_url }}" />
+	<!-- / styles -->
+
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" />
+	<!-- / favicon -->
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
