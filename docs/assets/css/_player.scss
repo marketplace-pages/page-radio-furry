@@ -4,28 +4,27 @@
 	color: #000;
 	* {
 		box-sizing: border-box;
-		line-height: 32px;
+		line-height: 2rem;
 	}
 	.jp-button {
 		cursor: pointer;
 	}
 	.jp-interface {
 		display: grid;
-		grid-template-columns: 64px 128px 1fr;
-		grid-template-rows: 64px;
+		grid-template-columns: 6rem 12rem 1fr;
+		grid-template-rows: 6rem;
 		grid-gap: 1rem 1rem;
 		align-content: center;
 		background: #fff;
-		border-radius: 6px;
+		border-radius: .6rem;
 		line-height: 1;
 		.jp-controls {
 			color: #000;
 			text-align: center;
-			.jp-play {
-				display: grid;
-				> span {
-					align-self: center;
-					justify-self: center;
+			.jp-button {
+				line-height: 6rem;
+				.fa {
+					vertical-align: middle;
 				}
 			}
 		}
@@ -45,15 +44,12 @@
 		.jp-timer-container,
 		.jp-volume-button-container {
 			display: grid;
-			grid-template-columns: 64px 64px;
+			grid-template-columns: 6rem 6rem;
 		}
 		.jp-progress-bar-container,
 		.jp-volume-bar-container {
-			$padding: 16px;
 			font-size: 0;
-			height: 32px;
-			padding-left: $padding;
-			padding-right: ($padding * 2);
+			height: 2rem;
 		}
 		.jp-current-time,
 		.jp-duration,
@@ -83,7 +79,7 @@
 		.jp-seek-bar,
 		.jp-volume-bar-value {
 			background: #0082b2;
-			height: 10px;
+			height: 1rem;
 		}
 	}
 }
