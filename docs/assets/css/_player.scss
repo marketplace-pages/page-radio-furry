@@ -12,14 +12,13 @@
 	.jp-interface {
 		display: grid;
 		grid-template-columns: 64px 1fr;
+		grid-template-rows: 64px;
 		background: #fff;
 		border-radius: 6px;
 		line-height: 1;
 		.jp-controls {
 			color: #000;
-			float: left;
 			text-align: center;
-			width: 64px;
 			.jp-button {
 				line-height: 64px;
 				.fa {
