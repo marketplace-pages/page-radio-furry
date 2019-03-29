@@ -6,7 +6,7 @@
  */
 
 function extJS_decodeData(string) {
-	string = atob(atob(string));
+	string = atob(string);
 
 	return string;
 }
