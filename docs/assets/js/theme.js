@@ -44,7 +44,7 @@ function extJS_initJPlayer() {
 		},
 		cssSelectorAncestor: '#jp-container-radio',
 		swfPath: '',
-		supplied: 'mp3',
+		supplied: 'oga',
 		preload: 'none',
 		wmode: 'window',
 		useStateClassSkin: true,
