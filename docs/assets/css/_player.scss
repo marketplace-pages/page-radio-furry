@@ -11,7 +11,7 @@
 	}
 	.jp-interface {
 		display: grid;
-		grid-template-columns: 64px 1fr;
+		grid-template-columns: 64px 128px 1fr;
 		grid-template-rows: 64px;
 		grid-gap: 1rem 1rem;
 		align-content: center;
@@ -34,7 +34,7 @@
 		.jp-progress,
 		.jp-volume {
 			display: grid;
-			grid-template-columns: 128px 1fr;
+			grid-template-columns: 1fr;
 		}
 		.jp-play {
 		}
