@@ -4,14 +4,14 @@ body {
 }
 
 html {
-	background: #f0efe8 url('../images/background/paw_pattern.02.png') repeat fixed;
+	//background: #f0efe8 url('../images/background/paw_pattern.02.png') repeat fixed;
 }
 
 #section-main {
 	.logo {
-		$size: 400px;
-		background: #fff url("../../storage/images/furry.02.png") no-repeat 50%;
-		background-size: $size - 100px;
+		$size: 40rem;
+		background: #fff url("../img/furry.02.png") no-repeat 50%;
+		background-size: $size - 10rem;
 		border-radius: 50%;
 		margin-left: auto;
 		margin-right: auto;
