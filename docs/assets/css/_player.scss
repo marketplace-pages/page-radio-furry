@@ -22,9 +22,10 @@
 			color: #000;
 			text-align: center;
 			.jp-button {
-				line-height: 64px;
+				display: grid;
 				.fa {
-					vertical-align: middle;
+					align-self: center;
+					justify-self: center;
 				}
 			}
 		}
