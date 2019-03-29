@@ -32,7 +32,8 @@
 		}
 		.jp-progress,
 		.jp-volume {
-			overflow: hidden;
+			display: grid;
+			grid-template-columns: 128px 1fr;
 		}
 		.jp-play {
 		}
@@ -41,9 +42,8 @@
 		}
 		.jp-timer-container,
 		.jp-volume-button-container {
-			overflow: hidden;
-			float: left;
-			width: 128px;
+			display: grid;
+			grid-template-columns: 64px 64px;
 		}
 		.jp-progress-bar-container,
 		.jp-volume-bar-container {
@@ -58,10 +58,6 @@
 		.jp-duration,
 		.jp-mute,
 		.jp-volume-max {
-			float: left;
-			height: 32px;
-			text-align: center;
-			width: 64px;
 		}
 		.jp-current-time,
 		.jp-duration {
