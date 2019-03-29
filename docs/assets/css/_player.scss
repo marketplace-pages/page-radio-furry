@@ -10,10 +10,10 @@
 		cursor: pointer;
 	}
 	.jp-interface {
+		display: grid;
 		background: #fff;
 		border-radius: 6px;
 		line-height: 1;
-		overflow: hidden;
 		.jp-controls {
 			color: #000;
 			float: left;

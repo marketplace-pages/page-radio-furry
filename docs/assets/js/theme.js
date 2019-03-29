@@ -1,17 +1,6 @@
 'use strict';
 
 /**
- * Decode data.
- * ---------------------------------------------------------------------------------------------------------------------
- */
-
-function extJS_decodeData(string) {
-	string = atob(string);
-
-	return string;
-}
-
-/**
  * jPlayer.
  * ---------------------------------------------------------------------------------------------------------------------
  */
@@ -20,11 +9,11 @@ function extJS_initJPlayer() {
 	let streamTitle, streamURL, jPRadioStream;
 
 	streamTitle = 'Radio W.T.F. - Live Stream';
-	streamURL = 'aHR0cDovLzIxMy4yNDguMjAuMTAyOjkwMDA=';
+	streamURL = 'http://213.248.20.102:9000';
 
 	jPRadioStream = {
 		title: streamTitle,
-		mp3: extJS_decodeData(streamURL)
+		oga: streamURL
 	};
 
 	let ready = false;
