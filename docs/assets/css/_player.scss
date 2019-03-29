@@ -29,7 +29,7 @@
 			}
 		}
 		.jp-controls-meta {
-			overflow: hidden;
+			display: grid;
 		}
 		.jp-progress,
 		.jp-volume {
@@ -44,6 +44,8 @@
 		.jp-timer-container,
 		.jp-volume-button-container {
 			display: grid;
+			align-self: center;
+			justify-self: center;
 			grid-template-columns: 5rem 5rem;
 		}
 		.jp-progress-bar-container,
