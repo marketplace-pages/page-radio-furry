@@ -13,7 +13,7 @@ function extJS_initJPlayer() {
 
 	jPRadioStream = {
 		title: streamTitle,
-		oga: streamURL
+		mp3: streamURL
 	};
 
 	let ready = false;
@@ -33,7 +33,7 @@ function extJS_initJPlayer() {
 		},
 		cssSelectorAncestor: '#jp-container-radio',
 		swfPath: '',
-		supplied: 'oga',
+		supplied: 'mp3',
 		preload: 'none',
 		wmode: 'window',
 		useStateClassSkin: true,
