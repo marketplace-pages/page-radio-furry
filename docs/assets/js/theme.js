@@ -9,7 +9,7 @@ function extJS_initJPlayer() {
 	let streamTitle, streamURL, jPRadioStream;
 
 	streamTitle = 'Radio W.T.F. - Live Stream';
-	streamURL = 'http://213.248.20.102:9000/live';
+	streamURL = 'http://213.248.20.102:8881';
 
 	jPRadioStream = {
 		title: streamTitle,
