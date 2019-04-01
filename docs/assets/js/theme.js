@@ -26,8 +26,8 @@ function extJS_runRadio() {
 			let button = target.find('.mejs__playpause-button');
 
 			media.setSrc(source + '?nocache=' + count);
-			media.load();
-			media.play();
+			//media.load();
+			//media.play();
 
 			button.on('click', function (e) {
 				if (media.readyState > 0) {
