@@ -1,14 +1,20 @@
 'use strict';
 
+function extJS_getCount() {
+	let out;
+	out = Math.floor((Math.random() * 1000000) + 1);
+
+	return out;
+}
+
 /**
- * jPlayer.
+ * Radio.
  * ---------------------------------------------------------------------------------------------------------------------
  */
 
-function extJS_initPlayer() {
+function extJS_runRadio() {
 	let elRadio = $('#radio');
-	//let elSource = $('#radio source').attr('src');
-	let count = Math.floor((Math.random() * 1000000) + 1);
+	let count = extJS_getCount();
 	let source = 'http://213.248.20.102:8881/';
 
 	elRadio.mediaelementplayer({
@@ -56,5 +62,5 @@ function extJS_initPlayer() {
  */
 
 $(function () {
-	extJS_initPlayer();
+	extJS_runRadio();
 });
