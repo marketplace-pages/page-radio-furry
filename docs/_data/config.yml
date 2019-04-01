@@ -11,6 +11,7 @@ styles:
 
 scripts:
   - https://cdn.jsdelivr.net/npm/jquery
+  - https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL
   - https://cdn.jsdelivr.net/npm/plyr
   - https://cdn-storage.github.io/scripts/bulma/bulma.min.js
   - https://cdn-storage.github.io/scripts/theme/theme.min.js
