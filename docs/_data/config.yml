@@ -12,6 +12,7 @@ styles:
 scripts:
   - https://cdn.jsdelivr.net/npm/jquery
   - https://cdn.jsdelivr.net/npm/plyr
+  - https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js
   - https://cdn-storage.github.io/scripts/bulma/bulma.min.js
   - https://cdn-storage.github.io/scripts/theme/theme.min.js
 
