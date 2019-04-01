@@ -18,7 +18,7 @@ function extJS_initPlayer() {
 			player.play();
 
 			if ( player.paused === true ) {
-				player.setSrc('');
+				alert('Paused!')
 			}
 		}
 	});
