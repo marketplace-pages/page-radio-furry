@@ -5,7 +5,7 @@ fonts:
   - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
 styles:
-  - https://cdn.jsdelivr.net/npm/plyr/dist/plyr.min.css
+  - https://cdn.jsdelivr.net/npm/plyr/dist/plyr.css
   - https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css
   - https://cdn-storage.github.io/styles/theme/theme.css
 
