@@ -5,41 +5,33 @@
  * ---------------------------------------------------------------------------------------------------------------------
  */
 
-function extJS_initPlayer() {
-	let radio = $('#radio');
-	MediaElement('radio', {
-		success: function (me) {
-			// Generate random number and append to the streaming URL's get parameters
-			// in order to avoid cached playback.
-			let source = radio.attr('src');
-			let i = Math.floor((Math.random() * 1000000) + 1);
-			me.setSrc(source + '?nocache=' + i);
+$(window).load(function () {
 
-			// Start player.
-			me.play();
+	let target = $('.player-container').closest('.mejs__container'),
+		playerId = target.attr('id'),
+		player = mejs.players[playerId],
+		button = target.find('.mejs__playpause-button'),
+		i = Math.floor((Math.random() * 1000000) + 1),
+		source = 'http://213.248.20.102:8881/;';
 
-			// Some mobile devices don't allow autoplay
-			// Check if player is paused after me.play(); above.
-			// If yes, remove src from player.
-			let playPause = $('#play-pause');
-			if (me.paused === true) {
-				me.setSrc('');
-			}
+	button.on('click', function (e) {
 
-			// Play and pause player on click.
-			// Increase nocache number in src url every time to avoid cached playback.
-			document.getElementById('play-pause')['onclick'] = function () {
-				if (me.paused) {
-					i++;
-					me.setSrc(source + '?nocache=' + i);
-					me.play();
-				} else {
-					me.setSrc('');
-				}
-			};
+		if (player.media.readyState > 0) {
+			player.pause();
+			player.setSrc('');
+			player.load();
+			button.removeClass('mejs__pause').addClass('mejs__play');
+		} else {
+			i++;
+			player.setSrc(source + '?nocache=' + i);
+			player.load();
+			player.play();
+			button.removeClass('mejs__play').addClass('mejs__pause');
 		}
+
+		return false;
 	});
-}
+});
 
 /**
  * Loading functions.
