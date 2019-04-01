@@ -12,13 +12,13 @@ function extJS_initPlayer() {
 	let source = 'http://213.248.20.102:8881';
 
 	elRadio.mediaelementplayer({
-		success: function (player, node) {
-			let target = $(player).closest('.mejs__container');
+		success: function (media, node) {
+			let target = $(media).closest('.mejs__container');
 			let button = target.find('.mejs__playpause-button');
 
-			player.setSrc('');
+			media.setSrc('');
 
-			if ( player.pause === true ) {
+			if ( media.pause === true ) {
 				alert('Paused!')
 			}
 		}
