@@ -29,6 +29,8 @@ function extJS_initPlayer() {
 					media.play();
 					button.removeClass('mejs__pause').addClass('mejs__play');
 				}
+
+				return false;
 			});
 		}
 	});
