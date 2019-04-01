@@ -14,6 +14,7 @@ function extJS_initPlayer() {
 	elRadio.mediaelementplayer({
 		audioWidth: 0,
 		audioHeight: 0,
+		audioVolume: 'vertical',
 		startVolume: 0.5,
 		loop: false,
 		enableAutosize: false,
