@@ -15,8 +15,11 @@ function extJS_initPlayer() {
 		success: function (player, node) {
 			let target = $(player).closest('.mejs__container');
 			let button = target.find('.mejs__playpause-button');
+			player.play();
 
-			alert(button.html());
+			if ( player.paused === true ) {
+				player.setSrc('');
+			}
 		}
 	});
 }
