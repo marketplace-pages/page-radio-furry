@@ -6,7 +6,7 @@
  */
 
 function extJS_initJPlayer() {
-	const player = new Plyr('#player');
+	const player = new Plyr('#player', {});
 }
 
 /**
