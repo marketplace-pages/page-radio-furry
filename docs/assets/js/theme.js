@@ -14,7 +14,7 @@ function extJS_initPlayer() {
 		success: function (player, node) {
 			$(player).closest('.mejs__container');
 
-			alert($(player));
+			alert(player);
 		}
 	});
 }
