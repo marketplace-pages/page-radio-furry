@@ -12,6 +12,14 @@ function extJS_initPlayer() {
 	let source = 'http://213.248.20.102:8881/';
 
 	elRadio.mediaelementplayer({
+		audioWidth: 0,
+		audioHeight: 0,
+		loop: false,
+		enableAutosize: false,
+		enableKeyboard: false,
+		features: ['playpause', 'volume'],
+		showPosterWhenEnded: false,
+		pauseOtherPlayers: true,
 		success: function (media, node) {
 			let target = $(media).closest('.mejs__container');
 			let button = target.find('.mejs__playpause-button');
