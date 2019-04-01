@@ -14,6 +14,7 @@ function extJS_initPlayer() {
 	elRadio.mediaelementplayer({
 		audioWidth: 0,
 		audioHeight: 0,
+		startVolume: 0.5,
 		loop: false,
 		enableAutosize: false,
 		enableKeyboard: false,
@@ -23,6 +24,10 @@ function extJS_initPlayer() {
 		success: function (media, node) {
 			let target = $(media).closest('.mejs__container');
 			let button = target.find('.mejs__playpause-button');
+
+			media.setSrc(source + '?nocache=' + count);
+			media.load();
+			media.play();
 
 			button.on('click', function (e) {
 				if (media.readyState > 0) {
