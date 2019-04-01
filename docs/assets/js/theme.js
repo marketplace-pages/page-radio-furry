@@ -14,7 +14,7 @@ $(window).load(function () {
 		i = Math.floor((Math.random() * 1000000) + 1),
 		source = 'http://213.248.20.102:8881/;';
 
-	button.on('click', function (e) {
+	button.on('click', function () {
 
 		if (player.media.readyState > 0) {
 			player.pause();
