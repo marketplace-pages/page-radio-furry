@@ -13,7 +13,7 @@ function extJS_initPlayer() {
 	elPlayer.mediaelementplayer({
 		success: function (player, node) {
 			$(player).closest('.mejs__container');
-			$(player).setSrc( elSource + '?nocache=' + i );
+			$(player).setSrc( elSource + '?nocache=' + count );
 
 			alert(elSource + count);
 		}
