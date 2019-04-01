@@ -17,7 +17,7 @@ function extJS_initPlayer() {
 			let button = target.find('.mejs__playpause-button');
 			player.play();
 
-			if ( player.paused === true ) {
+			if ( player.pause === true ) {
 				alert('Paused!')
 			}
 		}
