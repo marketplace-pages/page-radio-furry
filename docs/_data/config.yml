@@ -5,14 +5,13 @@ fonts:
   - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
 styles:
-  - https://cdn.jsdelivr.net/npm/plyr/dist/plyr.css
+  - https://cdn.jsdelivr.net/npm/mediaelement/build/mediaelementplayer.min.css
   - https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css
   - https://cdn-storage.github.io/styles/theme/theme.css
 
 scripts:
   - https://cdn.jsdelivr.net/npm/jquery
-  - https://cdn.jsdelivr.net/npm/plyr
-  - https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js
+  - https://cdn.jsdelivr.net/npm/mediaelement/build/mediaelement-and-player.min.js
   - https://cdn-storage.github.io/scripts/bulma/bulma.min.js
   - https://cdn-storage.github.io/scripts/theme/theme.min.js
 
