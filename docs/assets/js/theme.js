@@ -6,7 +6,8 @@
  */
 
 function extJS_initPlayer() {
-	$('#radio').mediaelementplayer({
+	let radio = $('#radio');
+	MediaElement('radio', {
 		success: function (me) {
 			// Generate random number and append to the streaming URL's get parameters
 			// in order to avoid cached playback.
