@@ -6,16 +6,15 @@
  */
 
 function extJS_initPlayer() {
-	let elPlayer = $('#player');
-	let elSource = $('#player source').attr('src');
-	let count = Math.floor( ( Math.random() * 1000000 ) + 1 );
+	let elRadio = $('#radio');
+	let elSource = $('#radio source').attr('src');
+	let count = Math.floor((Math.random() * 1000000) + 1);
 
-	elPlayer.mediaelementplayer({
+	elRadio.mediaelementplayer({
 		success: function (player, node) {
 			$(player).closest('.mejs__container');
-			$(player).setSrc( elSource + '?nocache=' + count );
 
-			alert(elSource + count);
+			alert($(player));
 		}
 	});
 }
