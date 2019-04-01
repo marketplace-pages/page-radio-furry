@@ -1,12 +1,5 @@
 'use strict';
 
-function extJS_getCount() {
-	let out;
-	out = Math.floor((Math.random() * 1000000) + 1);
-
-	return out;
-}
-
 /**
  * Radio.
  * ---------------------------------------------------------------------------------------------------------------------
@@ -14,7 +7,7 @@ function extJS_getCount() {
 
 function extJS_runRadio() {
 	let elRadio = $('#radio');
-	let count = extJS_getCount();
+	let count = Math.floor((Math.random() * 1000000) + 1);
 	let source = 'http://213.248.20.102:8881/';
 
 	elRadio.mediaelementplayer({
