@@ -12,6 +12,8 @@ styles:
 scripts:
   - https://cdn.jsdelivr.net/npm/jquery
   - https://cdn.jsdelivr.net/npm/mediaelement/build/mediaelement-and-player.min.js
+  - https://cdn-storage.github.io/scripts/api/fetch.cache.min.js
+  - https://cdn-storage.github.io/scripts/discord/discord.api.min.js
   - https://cdn-storage.github.io/scripts/bulma/bulma.min.js
   - https://cdn-storage.github.io/scripts/theme/theme.min.js
 
