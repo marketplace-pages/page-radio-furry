@@ -10,7 +10,7 @@ function extJS_getBgImages() {
 	let images = [];
 
 	$.ajax({
-		url: 'assets/img/images.json',
+		url: '/assets/img/images.json',
 		method: 'GET',
 		dataType: 'json',
 		cache: false
