@@ -19,7 +19,7 @@ function extJS_runRadio() {
 	let source = 'http://213.248.20.102:8881/';
 
 	elRadio.mediaelementplayer({
-		defaultAudioWidth: 150,
+		defaultAudioWidth: 100,
 		audioVolume: 'vertical',
 		audioWidth: 0,
 		audioHeight: 0,
