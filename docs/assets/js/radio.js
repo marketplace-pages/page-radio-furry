@@ -20,6 +20,7 @@ function extJS_runRadio() {
 
 	elRadio.mediaelementplayer({
 		defaultAudioWidth: 150,
+		audioVolume: 'vertical',
 		audioWidth: 0,
 		audioHeight: 0,
 		startVolume: 0.5,
