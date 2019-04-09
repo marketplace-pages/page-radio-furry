@@ -16,7 +16,7 @@ function extJS_getRadioRandomSource() {
 function extJS_runRadio() {
 	let elRadio = $('#radio');
 	let count = extJS_getRadioRandomSource();
-	let source = 'http://213.248.20.102:8881/';
+	let source = 'http://web-stream.net:8881/';
 
 	elRadio.mediaelementplayer({
 		defaultAudioWidth: 100,
